@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive User Interface</title>
+    <script src="static/vendor/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/javascript/script.js"></script>
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div class="row vertical-cente">
+            <div class="col-3 border-right text-center">
+                <h1> Create User </h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="create-name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Age</span>
+                    </div>
+                    <input type="text" class="form-control" id="create-age">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Email</span>
+                    </div>
+                    <input type="text" class="form-control" id="create-email">
+                </div>
+                <button id="create" type="button" class="btn btn-success">Create</button>
+                <p id="create-result" class="mt-3"></p>
+            </div>
+            <div class="col-6 text-center">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="display-area"></tbody>
+                </table>
+            </div>
+            <div class="col-3 border-left text-center">
+                <h1>Current User</h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="update-name" name="name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Age</span>
+                    </div>
+                    <input type="text" class="form-control" id="update-age" name="age">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Email</span>
+                    </div>
+                    <input type="text" class="form-control" id="update-email" name="email">
+                </div>
+                <button id="update" type="button" class="btn btn-success">Update</button>
+                <button id="delete" type="button" class="btn btn-danger">Delete</button>
+                <p id="update-result" class="mt-3"></p>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Instruction</h1>
+                <p class="lead">Create User by entering all informations.</p>
+                <p class="lead">Name is the key word to update/delete users.</p>
+                <p class="lead">Only need to enter user name to delete a user.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
